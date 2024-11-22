@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Pagination from "../Pagination";
 import { FaEdit, FaEye, FaTrash } from "react-icons/fa";
 
-const Products = () => {
+const DiscountProducts = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchValue, setSearchValue] = useState("");
   const [parPage, setParPage] = useState(5);
@@ -12,7 +12,7 @@ const Products = () => {
   return (
     <div className="px-2 lg:px-7 pt-5">
       <h1 className="text-[#000000] font-semibold text-lg mb-3">
-        All Products
+        Discount Products
       </h1>
 
       <div className="w-full p-4 bg-[#6a5fdf] rounded-md">
@@ -124,4 +124,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default DiscountProducts;
